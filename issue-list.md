@@ -49,6 +49,8 @@
     - *手动设置样式控制，因为某些情况下，微信的 `display: none` 的权重比较低，会被覆盖*
 - background-iamge在真机环境下，无法使用相对路径的图片
     - *可以使用 base64 或者外链，也可以使用 image 组件替代*
+- `clip-path` 在安卓机上性能消耗严重，与 scroll-view 一起使用时，会导致 scroll-view 滚动严重卡顿
+    - *使用别的样式替换 clip-path*
 
 ## API
 - 已拉起的键盘无法收起，`wx.hideKeyboard()` 方法无效
